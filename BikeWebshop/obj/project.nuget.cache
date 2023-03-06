@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "imlvrGaPGSlI+cP6aQp0XF+EDERCYaF6258RUDVm94fuFtgALCbnj0DPvWh5UPFgvVpYHwsVXhue2D/GvQxcwQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\rikko\\OneDrive\\Documenten\\School\\Stage\\dotNET Acadamy\\ASP.NET CORE\\assignment--1-RikkoKeuppens\\BikeWebshop\\BikeWebshop.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rikko\\.nuget\\packages\\bootstrap\\5.3.0-alpha1\\bootstrap.5.3.0-alpha1.nupkg.sha512"
+  ],
+  "logs": []
+}

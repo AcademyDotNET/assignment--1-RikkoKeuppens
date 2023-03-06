@@ -1,0 +1,15 @@
+﻿@model List<Product>
+@{
+}
+
+<h1>Products</h1>
+<div class="d-flex w-full justify-content-around mt-5">
+    @foreach(Product product in Model)
+    {
+        <div class="pb-0 pt-3 px-3 border">
+            <p class="text-center w-full font-weight-bold">@product.Name</p>
+            <a class="bg-success text-light p-2 rounded" asp-action="Details" asp-route-id="@product.Id">Add to basket</a>
+            <p class="text-center w-full font-weight-bold mt-3">€@product.Price</p>
+        </div>
+    }
+</div>
