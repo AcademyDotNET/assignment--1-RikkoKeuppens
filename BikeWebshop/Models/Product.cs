@@ -1,4 +1,7 @@
-﻿namespace BikeWebshop.Models
+﻿using System.Collections;
+using System.Collections.Generic;
+
+namespace BikeWebshop.Models
 {
     public class Product
     {
@@ -6,11 +9,13 @@
         public string Name { get; set; }
         public double Price { get; set; }
 
-        public Product(int id, string name, double price)
+        public Product() { }
+        
+        public Product( string name, double price)
         {
-            Id = id;
-            Name = name;    
+            Name = name;
             Price = price;
         }
+
     }
 }
