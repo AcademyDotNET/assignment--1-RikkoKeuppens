@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Microsoft.AspNetCore.Identity;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace BikeWebshop.Models
@@ -11,12 +12,15 @@ namespace BikeWebshop.Models
 
         public ICollection<ShoppingBag> Bags { get; set; }
 
+        public int IdentityUserId { get; set; }
+        public IdentityUser IdentityUser { get; set; }
+
         public Customer() { }
 
-        public Customer(string name, string firstName)
+        public Customer(string name, IdentityUser identityUser)
         {
             Name = name;
-            FirstName = firstName;
+            IdentityUser = identityUser;
         }
 
     }

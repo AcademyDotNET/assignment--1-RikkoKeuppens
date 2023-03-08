@@ -1,9 +1,11 @@
 ﻿using BikeWebshop.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace BikeWebshop.Data
 {
-    public class ShopContext : DbContext
+    public class ShopContext : IdentityDbContext<IdentityUser>
     {
         public ShopContext(DbContextOptions<ShopContext> options) : base(options)
         {

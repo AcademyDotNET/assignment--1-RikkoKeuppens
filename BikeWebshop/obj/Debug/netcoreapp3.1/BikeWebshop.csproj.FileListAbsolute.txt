@@ -115,3 +115,11 @@ C:\Users\rikko\OneDrive\Documenten\School\Stage\dotNET Acadamy\ASP.NET CORE\assi
 C:\Users\rikko\OneDrive\Documenten\School\Stage\dotNET Acadamy\ASP.NET CORE\assignment--1-RikkoKeuppens\BikeWebshop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\rikko\OneDrive\Documenten\School\Stage\dotNET Acadamy\ASP.NET CORE\assignment--1-RikkoKeuppens\BikeWebshop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\rikko\OneDrive\Documenten\School\Stage\dotNET Acadamy\ASP.NET CORE\assignment--1-RikkoKeuppens\BikeWebshop\obj\Debug\netcoreapp3.1\Razor\Views\Products\ShoppingBag.cshtml.g.cs
+C:\Users\rikko\OneDrive\Documenten\School\Stage\dotNET Acadamy\ASP.NET CORE\assignment--1-RikkoKeuppens\BikeWebshop\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\rikko\OneDrive\Documenten\School\Stage\dotNET Acadamy\ASP.NET CORE\assignment--1-RikkoKeuppens\BikeWebshop\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\rikko\OneDrive\Documenten\School\Stage\dotNET Acadamy\ASP.NET CORE\assignment--1-RikkoKeuppens\BikeWebshop\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\rikko\OneDrive\Documenten\School\Stage\dotNET Acadamy\ASP.NET CORE\assignment--1-RikkoKeuppens\BikeWebshop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\Users\rikko\OneDrive\Documenten\School\Stage\dotNET Acadamy\ASP.NET CORE\assignment--1-RikkoKeuppens\BikeWebshop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\rikko\OneDrive\Documenten\School\Stage\dotNET Acadamy\ASP.NET CORE\assignment--1-RikkoKeuppens\BikeWebshop\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+C:\Users\rikko\OneDrive\Documenten\School\Stage\dotNET Acadamy\ASP.NET CORE\assignment--1-RikkoKeuppens\BikeWebshop\obj\Debug\netcoreapp3.1\Razor\Views\Home\Login.cshtml.g.cs
+C:\Users\rikko\OneDrive\Documenten\School\Stage\dotNET Acadamy\ASP.NET CORE\assignment--1-RikkoKeuppens\BikeWebshop\obj\Debug\netcoreapp3.1\Razor\Views\Home\Register.cshtml.g.cs

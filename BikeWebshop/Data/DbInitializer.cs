@@ -16,8 +16,6 @@ namespace Webshop.Data
 				return;
 			}
 
-			context.Customers.AddRange(new Customer("Keuppens", "Rikko"));
-
 			context.Products.AddRange(
 				new Product("BMX", 105.00),
 				new Product("Mountainbike", 10.00),

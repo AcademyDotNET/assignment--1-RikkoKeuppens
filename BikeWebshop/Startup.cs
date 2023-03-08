@@ -2,6 +2,7 @@ using BikeWebshop.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -28,6 +29,9 @@ namespace BikeWebshop
         {
             services.AddDbContext<ShopContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("defaultconnection")));
+            services.AddIdentity<IdentityUser, IdentityRole>()
+              .AddEntityFrameworkStores<ShopContext>()
+              .AddDefaultTokenProviders();
             services.AddControllersWithViews();
         }
 
@@ -49,6 +53,7 @@ namespace BikeWebshop
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
