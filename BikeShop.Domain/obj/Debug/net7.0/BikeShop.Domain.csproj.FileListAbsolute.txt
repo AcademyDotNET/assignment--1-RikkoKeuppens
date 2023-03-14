@@ -1,0 +1,12 @@
+C:\Users\rikko\OneDrive\Documenten\School\Stage\dotNET Acadamy\ASP.NET CORE\BikeShop\BikeShop.Domain\bin\Debug\net7.0\BikeShop.Domain.deps.json
+C:\Users\rikko\OneDrive\Documenten\School\Stage\dotNET Acadamy\ASP.NET CORE\BikeShop\BikeShop.Domain\bin\Debug\net7.0\BikeShop.Domain.dll
+C:\Users\rikko\OneDrive\Documenten\School\Stage\dotNET Acadamy\ASP.NET CORE\BikeShop\BikeShop.Domain\bin\Debug\net7.0\BikeShop.Domain.pdb
+C:\Users\rikko\OneDrive\Documenten\School\Stage\dotNET Acadamy\ASP.NET CORE\BikeShop\BikeShop.Domain\obj\Debug\net7.0\BikeShop.Domain.csproj.AssemblyReference.cache
+C:\Users\rikko\OneDrive\Documenten\School\Stage\dotNET Acadamy\ASP.NET CORE\BikeShop\BikeShop.Domain\obj\Debug\net7.0\BikeShop.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rikko\OneDrive\Documenten\School\Stage\dotNET Acadamy\ASP.NET CORE\BikeShop\BikeShop.Domain\obj\Debug\net7.0\BikeShop.Domain.AssemblyInfoInputs.cache
+C:\Users\rikko\OneDrive\Documenten\School\Stage\dotNET Acadamy\ASP.NET CORE\BikeShop\BikeShop.Domain\obj\Debug\net7.0\BikeShop.Domain.AssemblyInfo.cs
+C:\Users\rikko\OneDrive\Documenten\School\Stage\dotNET Acadamy\ASP.NET CORE\BikeShop\BikeShop.Domain\obj\Debug\net7.0\BikeShop.Domain.csproj.CoreCompileInputs.cache
+C:\Users\rikko\OneDrive\Documenten\School\Stage\dotNET Acadamy\ASP.NET CORE\BikeShop\BikeShop.Domain\obj\Debug\net7.0\BikeShop.Domain.dll
+C:\Users\rikko\OneDrive\Documenten\School\Stage\dotNET Acadamy\ASP.NET CORE\BikeShop\BikeShop.Domain\obj\Debug\net7.0\refint\BikeShop.Domain.dll
+C:\Users\rikko\OneDrive\Documenten\School\Stage\dotNET Acadamy\ASP.NET CORE\BikeShop\BikeShop.Domain\obj\Debug\net7.0\BikeShop.Domain.pdb
+C:\Users\rikko\OneDrive\Documenten\School\Stage\dotNET Acadamy\ASP.NET CORE\BikeShop\BikeShop.Domain\obj\Debug\net7.0\ref\BikeShop.Domain.dll

@@ -1,0 +1,24 @@
+﻿@using Bikeshop.Application.ViewModel;
+@using Domain.Persistence;
+@using Microsoft.AspNetCore.Identity;
+@inject SignInManager<IdentityUser> signInManager;
+@model ShoppingItem
+@{
+    ProductVM product = ViewBag.product;
+}
+<h1>@product.Name</h1>
+@if (!signInManager.IsSignedIn(User))
+{
+    <h2>Sing in to view our product</h2>
+}
+@if (signInManager.IsSignedIn(User))
+{
+   <form asp-action="Shop">
+    <div>
+        <label>Quantity</label>
+        <input asp-for="Quantity" type="number" />
+    </div>
+    <input type="hidden" value="@product.Id" asp-for="ProductID" />
+    <button type="submit">Submit</button>
+    </form>
+}

@@ -1,0 +1,15 @@
+C:\Users\rikko\OneDrive\Documenten\School\Stage\dotNET Acadamy\ASP.NET CORE\BikeShop\Bikeshop.Application\bin\Debug\net7.0\Bikeshop.Application.deps.json
+C:\Users\rikko\OneDrive\Documenten\School\Stage\dotNET Acadamy\ASP.NET CORE\BikeShop\Bikeshop.Application\bin\Debug\net7.0\Bikeshop.Application.dll
+C:\Users\rikko\OneDrive\Documenten\School\Stage\dotNET Acadamy\ASP.NET CORE\BikeShop\Bikeshop.Application\bin\Debug\net7.0\Bikeshop.Application.pdb
+C:\Users\rikko\OneDrive\Documenten\School\Stage\dotNET Acadamy\ASP.NET CORE\BikeShop\Bikeshop.Application\bin\Debug\net7.0\BikeShop.Domain.dll
+C:\Users\rikko\OneDrive\Documenten\School\Stage\dotNET Acadamy\ASP.NET CORE\BikeShop\Bikeshop.Application\bin\Debug\net7.0\BikeShop.Domain.pdb
+C:\Users\rikko\OneDrive\Documenten\School\Stage\dotNET Acadamy\ASP.NET CORE\BikeShop\Bikeshop.Application\obj\Debug\net7.0\Bikeshop.Application.csproj.AssemblyReference.cache
+C:\Users\rikko\OneDrive\Documenten\School\Stage\dotNET Acadamy\ASP.NET CORE\BikeShop\Bikeshop.Application\obj\Debug\net7.0\Bikeshop.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rikko\OneDrive\Documenten\School\Stage\dotNET Acadamy\ASP.NET CORE\BikeShop\Bikeshop.Application\obj\Debug\net7.0\Bikeshop.Application.AssemblyInfoInputs.cache
+C:\Users\rikko\OneDrive\Documenten\School\Stage\dotNET Acadamy\ASP.NET CORE\BikeShop\Bikeshop.Application\obj\Debug\net7.0\Bikeshop.Application.AssemblyInfo.cs
+C:\Users\rikko\OneDrive\Documenten\School\Stage\dotNET Acadamy\ASP.NET CORE\BikeShop\Bikeshop.Application\obj\Debug\net7.0\Bikeshop.Application.csproj.CoreCompileInputs.cache
+C:\Users\rikko\OneDrive\Documenten\School\Stage\dotNET Acadamy\ASP.NET CORE\BikeShop\Bikeshop.Application\obj\Debug\net7.0\Bikeshop.Application.csproj.CopyComplete
+C:\Users\rikko\OneDrive\Documenten\School\Stage\dotNET Acadamy\ASP.NET CORE\BikeShop\Bikeshop.Application\obj\Debug\net7.0\Bikeshop.Application.dll
+C:\Users\rikko\OneDrive\Documenten\School\Stage\dotNET Acadamy\ASP.NET CORE\BikeShop\Bikeshop.Application\obj\Debug\net7.0\refint\Bikeshop.Application.dll
+C:\Users\rikko\OneDrive\Documenten\School\Stage\dotNET Acadamy\ASP.NET CORE\BikeShop\Bikeshop.Application\obj\Debug\net7.0\Bikeshop.Application.pdb
+C:\Users\rikko\OneDrive\Documenten\School\Stage\dotNET Acadamy\ASP.NET CORE\BikeShop\Bikeshop.Application\obj\Debug\net7.0\ref\Bikeshop.Application.dll

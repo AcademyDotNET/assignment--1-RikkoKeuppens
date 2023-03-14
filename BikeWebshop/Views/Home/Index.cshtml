@@ -1,9 +1,0 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-    string url = "/Images/Bike" + ViewData["randomNumber"] + ".jfif";
-}
-
-<div class="text-center">
-    <h1 class="display-4">Welcome Customer</h1>
-    <a asp-controller="Products" asp-action="Index"><img width="500px" class="mt-5"  src="@url"/></a>
-</div>
