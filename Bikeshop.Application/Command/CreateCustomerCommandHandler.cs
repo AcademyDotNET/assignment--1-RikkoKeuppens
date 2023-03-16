@@ -19,7 +19,7 @@ namespace Bikeshop.Application.Command
         }
         public async Task<int> Handle(CreateCustomerCommand request, CancellationToken cancellationToken)
         {
-            Customer customer = new Customer() { Id = request.Customer.Id, UserName = request.Customer.UserName, IdentityUser = request.Customer.IdentityUser};
+            Customer customer = new Customer() { Id = request.Customer.Id, UserName = request.Customer.UserName, IdentityUser = request.Customer.IdentityUser, Email = request.Customer.Email};
             var query = _context.Customers.Add(customer);
             return await _context.SaveAsync(cancellationToken);
         }

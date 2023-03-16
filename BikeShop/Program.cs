@@ -11,7 +11,8 @@ builder.Services.RegisterPersistence(builder.Configuration);
 builder.Services.RegisterApplication();
 builder.Services.AddIdentity<IdentityUser, IdentityRole>()
   .AddEntityFrameworkStores<ShopContext>()
-  .AddDefaultTokenProviders();
+  .AddDefaultTokenProviders()
+  .AddRoles<IdentityRole>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

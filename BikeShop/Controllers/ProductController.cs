@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Identity;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 using BikeWebshop.Application.Interfaces;
+using Domain.Persistence;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BikeShop.Controllers
 {
@@ -13,11 +15,14 @@ namespace BikeShop.Controllers
     {
         IMediator _mediator;
         IShopContext _context;
-        public ProductController(IMediator mediator, IShopContext shopContext)
+        UserManager<IdentityUser> _userManager;
+        public ProductController(UserManager<IdentityUser> userManager, IMediator mediator, IShopContext shopContext)
         {
             _mediator = mediator;
             _context = shopContext;
+            _userManager = userManager;
         }
+
         public async Task<IActionResult> Index()
         {
             var query = new ShowAllProductsQuery();
@@ -34,8 +39,10 @@ namespace BikeShop.Controllers
 
         public async Task<IActionResult> Shop([Bind("ProductID,Quantity")] ShoppingItemVM shoppingItem)
         {
-            var user_id = _context.Customers.FirstOrDefault();
-            var shoppingBag = _context.ShoppingBags.Where(j => j.CustomerID == user_id.Id)
+            string userId = _userManager.GetUserId(HttpContext.User);
+            var query = new ShowCustomerByUserIdQuery(userId);
+            var customer = await _mediator.Send(query);
+            var shoppingBag = _context.ShoppingBags.Where(j => j.CustomerID == customer.Id)
                   .OrderByDescending(a => a.Id)
                   .Select(p => p).FirstOrDefault();
             shoppingItem.ShoppingBagID = shoppingBag.Id;
@@ -47,9 +54,30 @@ namespace BikeShop.Controllers
 
         public async Task<IActionResult> Bag()
         {
+            string userId = _userManager.GetUserId(HttpContext.User);
             var query = new ShowShoppingBagInfoByIdQuery(1);
             var shoppingBagData = await _mediator.Send(query);
+            ViewData["Discount"] = getDiscount(shoppingBagData);
             return View(shoppingBagData);
+        }
+
+        public double getDiscount(ShoppingBag shoppingBag)
+        {
+            double productCount = 0;
+            foreach(ShoppingItem shoppingItem in shoppingBag.Items) 
+            {
+                productCount += shoppingItem.Quantity;
+            }
+            switch (productCount)
+            {
+                case < 3:
+                    return 0;
+                case >= 3 and < 6:
+                    return 5;
+                case >= 6:
+                    return 10;
+            }
+            return 0;
         }
     }
 }

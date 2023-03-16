@@ -26,12 +26,14 @@ namespace BikeShop.Controllers
         IMediator _mediator;
         UserManager<IdentityUser> _userManager;
         SignInManager<IdentityUser> _signInManager;
-        public AccountController(UserManager<IdentityUser> userManager, SignInManager<IdentityUser> signInManager, IMediator mediator, IShopContext context)
+        RoleManager<IdentityRole> _roleManager;
+        public AccountController(UserManager<IdentityUser> userManager, SignInManager<IdentityUser> signInManager,  IMediator mediator, IShopContext context, RoleManager<IdentityRole> roleManager)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _mediator = mediator;
             _context = context;
+            _roleManager = roleManager;
         }
         public async Task<IActionResult> Register([FromForm] Login model)
         {
@@ -41,13 +43,21 @@ namespace BikeShop.Controllers
             {
                 return BadRequest(result.Result.Errors);
             }
-            else
+            if (user.UserName == "Admin")
             {
-                Customer customer = new Customer(userName: user.UserName, identityUser: user);
+                var admin = _roleManager.FindByNameAsync("Admin").Result;
+                IdentityResult roleresult = await _userManager.AddToRoleAsync(user, admin.Name);
+                Customer customer = new Customer(userName: user.UserName, identityUser: user, email: model.Email);
                 var command = new CreateCustomerCommand(customer);
+                await _mediator.Send(command);
                 ShoppingBag shoppingBag = new ShoppingBag(command.Customer, DateTime.Now);
                 var command2 = new CreateShoppingBagCommand(shoppingBag);
                 await _mediator.Send(command2);
+            }
+            if (user.UserName != "Admin")
+            {
+                var customer = _roleManager.FindByNameAsync("Customer").Result;
+                IdentityResult roleresult = await _userManager.AddToRoleAsync(user, customer.Name);
             }
             return RedirectToAction("LoginPage", "Account");
         }
