@@ -21,7 +21,7 @@ namespace Bikeshop.Application.Query
         public async Task<CustomerVM> Handle(ShowCustomerByUserIdQuery request, CancellationToken cancellationToken)
         {
             var customer = await _context.Customers.Where(p => p.IdentityUser.Id == request.UserId).SingleAsync();
-            CustomerVM vm = new CustomerVM() { Id = customer.Id, IdentityUser = customer.IdentityUser, UserName = customer.UserName };
+            CustomerVM vm = new CustomerVM() { Id = customer.Id, IdentityUser = customer.IdentityUser, UserName = customer.UserName, Email = customer.Email };
             return vm;
         }
     }

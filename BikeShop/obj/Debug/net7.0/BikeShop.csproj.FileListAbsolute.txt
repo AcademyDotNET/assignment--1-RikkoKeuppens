@@ -88,3 +88,6 @@ C:\Users\rikko\OneDrive\Documenten\School\Stage\dotNET Acadamy\ASP.NET CORE\Bike
 C:\Users\rikko\OneDrive\Documenten\School\Stage\dotNET Acadamy\ASP.NET CORE\BikeShop\BikeShop\bin\Debug\net7.0\MediatR.dll
 C:\Users\rikko\OneDrive\Documenten\School\Stage\dotNET Acadamy\ASP.NET CORE\BikeShop\BikeShop\bin\Debug\net7.0\MediatR.Contracts.dll
 C:\Users\rikko\OneDrive\Documenten\School\Stage\dotNET Acadamy\ASP.NET CORE\BikeShop\BikeShop\bin\Debug\net7.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\rikko\OneDrive\Documenten\School\Stage\dotNET Acadamy\ASP.NET CORE\BikeShop\BikeShop\bin\Debug\net7.0\Serilog.dll
+C:\Users\rikko\OneDrive\Documenten\School\Stage\dotNET Acadamy\ASP.NET CORE\BikeShop\BikeShop\bin\Debug\net7.0\Serilog.Sinks.Console.dll
+C:\Users\rikko\OneDrive\Documenten\School\Stage\dotNET Acadamy\ASP.NET CORE\BikeShop\BikeShop\bin\Debug\net7.0\Serilog.Sinks.File.dll

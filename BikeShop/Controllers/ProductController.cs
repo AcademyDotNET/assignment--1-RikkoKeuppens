@@ -8,6 +8,7 @@ using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 using BikeWebshop.Application.Interfaces;
 using Domain.Persistence;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.Extensions.Logging;
 
 namespace BikeShop.Controllers
 {
@@ -16,11 +17,13 @@ namespace BikeShop.Controllers
         IMediator _mediator;
         IShopContext _context;
         UserManager<IdentityUser> _userManager;
-        public ProductController(UserManager<IdentityUser> userManager, IMediator mediator, IShopContext shopContext)
+        private readonly ILogger<ProductController> _logger;
+        public ProductController(UserManager<IdentityUser> userManager, IMediator mediator, IShopContext shopContext, ILogger<ProductController> logger)
         {
             _mediator = mediator;
             _context = shopContext;
             _userManager = userManager;
+            _logger = logger;
         }
 
         public async Task<IActionResult> Index()
@@ -48,6 +51,7 @@ namespace BikeShop.Controllers
             shoppingItem.ShoppingBagID = shoppingBag.Id;
             var command = new CreateShoppingItemCommand(shoppingItem);
             await _mediator.Send(command);
+            _logger.LogDebug("item to shoppingbag");
 
             return LocalRedirect("/Product");
         }

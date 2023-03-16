@@ -2,10 +2,14 @@ using BikeShop.Infrastructure;
 using Bikeshop.Application;
 using BikeShop.Persistence;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.IdentityModel.Tokens;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
 // Add services to the container.
+
 builder.Services.AddControllersWithViews();
 builder.Services.RegisterPersistence(builder.Configuration);
 builder.Services.RegisterApplication();
@@ -13,6 +17,10 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>()
   .AddEntityFrameworkStores<ShopContext>()
   .AddDefaultTokenProviders()
   .AddRoles<IdentityRole>();
+
+
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -29,8 +37,11 @@ using (var scope = app.Services.CreateScope())
     DbInitializer.Initialize(dbContext);
 }
 
+
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+
 
 app.UseRouting();
 

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "X4fnAR9883UJHz5XmFSeBj6oylzt3lumAD1DtaVoOiZ9IZ5+NtPms7xlxtQ6VjItPuH72G91UVBHS8gsdZn7Dw==",
+  "dgSpecHash": "bx4bK2tD4Dajztcjurpno7TYMQcwDCnhdwSwnz7dYrYKK/ef+9Da8YzSJA+59Jt7/Cyxero8agg9vmHxyC/m8w==",
   "success": true,
   "projectFilePath": "C:\\Users\\rikko\\OneDrive\\Documenten\\School\\Stage\\dotNET Acadamy\\ASP.NET CORE\\BikeShop\\BikeShop\\BikeShop.csproj",
   "expectedPackageFiles": [
@@ -50,6 +50,9 @@
     "C:\\Users\\rikko\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\rikko\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
     "C:\\Users\\rikko\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\rikko\\.nuget\\packages\\serilog\\3.0.0-dev-01926\\serilog.3.0.0-dev-01926.nupkg.sha512",
+    "C:\\Users\\rikko\\.nuget\\packages\\serilog.sinks.console\\4.1.1-dev-00910\\serilog.sinks.console.4.1.1-dev-00910.nupkg.sha512",
+    "C:\\Users\\rikko\\.nuget\\packages\\serilog.sinks.file\\5.0.1-dev-00947\\serilog.sinks.file.5.0.1-dev-00947.nupkg.sha512",
     "C:\\Users\\rikko\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\rikko\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\rikko\\.nuget\\packages\\system.configuration.configurationmanager\\5.0.0\\system.configuration.configurationmanager.5.0.0.nupkg.sha512",

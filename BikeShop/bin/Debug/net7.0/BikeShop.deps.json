@@ -12,7 +12,10 @@
           "BikeShop.Infrastructure": "1.0.0",
           "Bikeshop.Application": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.3",
-          "Microsoft.EntityFrameworkCore.Tools": "7.0.3"
+          "Microsoft.EntityFrameworkCore.Tools": "7.0.3",
+          "Serilog": "3.0.0-dev-01926",
+          "Serilog.Sinks.Console": "4.1.1-dev-00910",
+          "Serilog.Sinks.File": "5.0.1-dev-00947"
         },
         "runtime": {
           "BikeShop.dll": {}
@@ -482,6 +485,36 @@
           "lib/netstandard2.0/Mono.TextTemplating.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.1.1"
+          }
+        }
+      },
+      "Serilog/3.0.0-dev-01926": {
+        "runtime": {
+          "lib/net7.0/Serilog.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "3.0.0.0"
+          }
+        }
+      },
+      "Serilog.Sinks.Console/4.1.1-dev-00910": {
+        "dependencies": {
+          "Serilog": "3.0.0-dev-01926"
+        },
+        "runtime": {
+          "lib/net5.0/Serilog.Sinks.Console.dll": {
+            "assemblyVersion": "4.1.1.0",
+            "fileVersion": "4.1.1.0"
+          }
+        }
+      },
+      "Serilog.Sinks.File/5.0.1-dev-00947": {
+        "dependencies": {
+          "Serilog": "3.0.0-dev-01926"
+        },
+        "runtime": {
+          "lib/net5.0/Serilog.Sinks.File.dll": {
+            "assemblyVersion": "5.0.1.0",
+            "fileVersion": "5.0.1.0"
           }
         }
       },
@@ -1068,6 +1101,27 @@
       "sha512": "sha512-KZYeKBET/2Z0gY1WlTAK7+RHTl7GSbtvTLDXEZZojUdAPqpQNDL6tHv7VUpqfX5VEOh+uRGKaZXkuD253nEOBQ==",
       "path": "mono.texttemplating/2.2.1",
       "hashPath": "mono.texttemplating.2.2.1.nupkg.sha512"
+    },
+    "Serilog/3.0.0-dev-01926": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LAURPXcjQMdWxTI836Z3OwDwFGqRPgQ1MUIxsSK5kwjMYTIOiQkQUO1Re/1Czk25Hf+Oim3GBJx47jEW/4vAoQ==",
+      "path": "serilog/3.0.0-dev-01926",
+      "hashPath": "serilog.3.0.0-dev-01926.nupkg.sha512"
+    },
+    "Serilog.Sinks.Console/4.1.1-dev-00910": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Lri9i0Vv7MXpLAf5aXq+oBzX/ca5vl+fBAiLtXMJQu9xYyNv++8q+VhzePnOreES4GnwChg6Zrm8ARkVHE/kmA==",
+      "path": "serilog.sinks.console/4.1.1-dev-00910",
+      "hashPath": "serilog.sinks.console.4.1.1-dev-00910.nupkg.sha512"
+    },
+    "Serilog.Sinks.File/5.0.1-dev-00947": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rCxuBUTC4v/Mawa2bCD0CkEODiCIJqQvxZfWmZb9O2W1hcZ77WCrNGw2nKnXCuSII4cuWip9QwWbn9wmLzS5sA==",
+      "path": "serilog.sinks.file/5.0.1-dev-00947",
+      "hashPath": "serilog.sinks.file.5.0.1-dev-00947.nupkg.sha512"
     },
     "System.Buffers/4.5.1": {
       "type": "package",

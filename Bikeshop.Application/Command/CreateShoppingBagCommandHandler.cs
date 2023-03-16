@@ -20,7 +20,7 @@ namespace Bikeshop.Application.Command
 
         public async Task<int> Handle(CreateShoppingBagCommand request, CancellationToken cancellationToken)
         {
-            ShoppingBag shoppingBag = new ShoppingBag() { Id = request.ShoppingBag.Id, Customer = request.ShoppingBag.Customer, CustomerID = request.ShoppingBag.CustomerID, Date = request.ShoppingBag.Date};
+            ShoppingBag shoppingBag = new ShoppingBag() { Id = request.ShoppingBag.Id, Customer = request.ShoppingBag.Customer, Date = request.ShoppingBag.Date};
         
             _context.ShoppingBags.Add(shoppingBag);
             return await _context.SaveAsync(cancellationToken);

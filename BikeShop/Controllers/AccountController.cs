@@ -43,20 +43,20 @@ namespace BikeShop.Controllers
             {
                 return BadRequest(result.Result.Errors);
             }
-            if (user.UserName == "Admin")
+            if (user.UserName != "Admin")
             {
-                var admin = _roleManager.FindByNameAsync("Admin").Result;
+                var admin = _roleManager.FindByNameAsync("Customer").Result;
                 IdentityResult roleresult = await _userManager.AddToRoleAsync(user, admin.Name);
                 Customer customer = new Customer(userName: user.UserName, identityUser: user, email: model.Email);
-                var command = new CreateCustomerCommand(customer);
-                await _mediator.Send(command);
-                ShoppingBag shoppingBag = new ShoppingBag(command.Customer, DateTime.Now);
+                //var command = new CreateCustomerCommand(customer);
+                //await _mediator.Send(command);
+                ShoppingBag shoppingBag = new ShoppingBag(customer, DateTime.Now);
                 var command2 = new CreateShoppingBagCommand(shoppingBag);
                 await _mediator.Send(command2);
             }
-            if (user.UserName != "Admin")
+            if (user.UserName == "Admin")
             {
-                var customer = _roleManager.FindByNameAsync("Customer").Result;
+                var customer = _roleManager.FindByNameAsync("Admin").Result;
                 IdentityResult roleresult = await _userManager.AddToRoleAsync(user, customer.Name);
             }
             return RedirectToAction("LoginPage", "Account");
